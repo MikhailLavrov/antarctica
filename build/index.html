@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body body--nojs">
-    <div class="wrapper">
+    <div class="wrapper menu menu--closed">
       <header class="header">
         <div class="header__container container">
           <a class="header__logo logo" href="#">
@@ -17,11 +17,16 @@
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <nav class="header__navigation header__navigation--closed navigation">
+          <nav class="header__navigation navigation">
+            <a class="navigation__logo logo" href="#">
+              <svg width="70" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
             <button class="navigation__button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
-            <ul class="navigation__list">
+            <ul class="navigation__list navigation__list--header">
               <li class="navigation__item navigation__item--header">
                 <a href="#">Преимущества</a>
               </li>

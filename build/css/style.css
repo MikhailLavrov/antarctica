@@ -669,7 +669,7 @@ button,
   cursor: pointer;
 }
 
-.header__navigation--closed .navigation__button::before {
+.menu--closed .navigation__button::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -681,8 +681,8 @@ button,
   box-shadow: 0 -6px 0 0 #F9FBFD, 0 6px 0 0 #F9FBFD;
 }
 
-.header__navigation--opened .navigation__button::before,
-.header__navigation--opened .navigation__button::after {
+.menu--opened .navigation__button::before,
+.menu--opened .navigation__button::after {
   position: absolute;
   content: "";
   width: 18.4px;
@@ -692,13 +692,13 @@ button,
   background-color: #011C40;
 }
 
-.header__navigation--opened .navigation__button::before {
+.menu--opened .navigation__button::before {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.header__navigation--opened .navigation__button::after {
+.menu--opened .navigation__button::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -715,6 +715,15 @@ button,
 
 .logo svg {
   fill: #F9FBFD;
+}
+
+.navigation__logo {
+  display: none;
+  z-index: 100;
+}
+
+.navigation__logo svg {
+  fill: #011C40;
 }
 
 .navigation__list {
@@ -903,11 +912,22 @@ button,
     display: none;
   }
 
-  .header--opened .header__logo {
+  .menu--closed .navigation__list--header {
+    display: none;
+  }
+
+  .menu--opened .header__logo {
     z-index: -10;
   }
 
-  .header__navigation--opened .navigation__list {
+  .menu--opened .navigation__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+
+  .menu--opened .navigation__list--header {
     padding: 75px 30px 75px 15px;
     width: 89%;
     height: 100vh;
@@ -915,23 +935,18 @@ button,
     top: 0;
     display: block;
     position: absolute;
-    z-index: 3;
     background-color: #F9FBFD;
   }
 
-  .header__navigation--opened .navigation__item:not(:last-child) {
+  .menu--opened .navigation__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
-  .header__navigation--opened .navigation__item a {
+  .menu--opened .navigation__item a {
     display: block;
     padding: 10px 10px 8px;
     width: 100%;
     text-shadow: none;
-  }
-
-  .header__navigation--closed .navigation__list {
-    display: none;
   }
 
   .logo svg {

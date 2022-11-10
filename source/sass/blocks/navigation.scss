@@ -1,3 +1,12 @@
+.navigation__logo {
+  display: none;
+  z-index: 100;
+}
+
+.navigation__logo svg {
+  fill: $color-default-dark;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
