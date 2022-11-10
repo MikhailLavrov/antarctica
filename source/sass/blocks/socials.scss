@@ -1,0 +1,21 @@
+.socials {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 106px;
+
+  @include vp-1023 {
+    width: 87px;
+  }
+}
+
+// .socials__item {
+//   background-color: bisque;
+// }
+
+.socials__item a {
+  display: flex;
+  align-items: center;
+}

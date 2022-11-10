@@ -1,7 +1,7 @@
 .header {
-  //TODO
-  background-color: grey;
   padding: 35px 0;
+
+  background-color: grey;
 
   @include vp-1023 {
     padding: 30px 0;
@@ -14,29 +14,116 @@
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header__logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-right: auto;
 }
 
 .header__logo svg {
   filter: drop-shadow($text-shadow);
+}
+
+.header__navigation .navigation__list {
+  width: 594px;
 
   @include vp-1023 {
-    width: 38px;
-    height: 20px;
+    width: 503px;
   }
 
   @include vp-767 {
-    width: 42px;
-    height: 22px;
+    display: none;
   }
 }
 
-// .header__navigation
+//*Кнопка меню
+.navigation__button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  display: block;
+  position: relative;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+// Кнопка меню при ЗАКРЫТОМ меню (иконка бургер)
+.header__navigation--closed .navigation__button::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: $color-default-light;
+  box-shadow: 0 -6px 0 0 $color-default-light, 0 6px 0 0 $color-default-light;
+}
+
+// Кнопка меню при ОТКРЫТОМ меню (иконка крестик)
+.header__navigation--opened .navigation__button {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 18.4px;
+    height: 2px;
+    top: 50%;
+    left: 3px;
+    background-color: $color-default-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@include vp-767 {
+  // Открытое мобильное меню
+  .header--opened .header__logo {
+    z-index: -10;
+  }
+
+  .header__navigation--opened .navigation__list {
+    padding: 75px 30px 75px 15px;
+    width: 89%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+
+    display: block;
+
+    position: absolute;
+    z-index: 3;
+    background-color: $color-default-light;
+  }
+
+  .header__navigation--opened .navigation__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .header__navigation--opened .navigation__item a {
+    display: block;
+    padding: 10px 10px 8px;
+    width: 100%;
+    text-shadow: none;
+  }
+
+  // Закрытое мобильное меню
+  .header__navigation--closed .navigation__list {
+    display: none;
+  }
+}

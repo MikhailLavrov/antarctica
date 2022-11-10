@@ -8,7 +8,7 @@
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="body body--nojs">
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
@@ -17,21 +17,21 @@
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <nav class="header__navigation navigation">
+          <nav class="header__navigation header__navigation--closed navigation">
             <button class="navigation__button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
             <ul class="navigation__list">
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--header">
                 <a href="#">Преимущества</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--header">
                 <a href="#">Направления</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--header">
                 <a href="#">Ближайшие круизы</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item navigation__item--header">
                 <a href="#">Контакты</a>
               </li>
             </ul>
@@ -49,8 +49,53 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <a class="logo" href="#">
+            <svg width="70" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="footer__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--footer">
+                <a href="#">Преимущества</a>
+              </li>
+              <li class="navigation__item navigation__item--footer">
+                <a href="#">Направления</a>
+              </li>
+              <li class="navigation__item navigation__item--footer">
+                <a href="#">Ближайшие круизы</a>
+              </li>
+              <li class="navigation__item navigation__item--footer">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#">
+                <svg width="12" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Соцсеть одноклассники.">
+                  <use xlink:href="img/sprite.svg#socials-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Соцсеть дзен.">
+                  <use xlink:href="img/sprite.svg#socials-zen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false" aria-label="Соцсеть реддит.">
+                  <use xlink:href="img/sprite.svg#socials-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 

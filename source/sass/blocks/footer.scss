@@ -1,0 +1,52 @@
+.footer {
+  padding: 50px 0;
+  background-color: $color-default-dark;
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer .logo {
+  margin-right: 40px;
+
+  @include vp-1023 {
+    margin-right: 25px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.footer .navigation__list {
+  width: 594px;
+
+  @include vp-1023 {
+    width: 441px;
+  }
+
+  @include vp-767 {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.footer .socials {
+  margin-left: auto;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
