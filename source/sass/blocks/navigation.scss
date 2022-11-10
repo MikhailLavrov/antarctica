@@ -1,0 +1,47 @@
+// .navigation
+
+.navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 594px;
+
+  @include vp-1023 {
+    width: 503px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.navigation__item a {
+  color: $color-default-light;
+  text-shadow: $text-shadow;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  @include vp-1023 {
+    width: 503px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include vp-767 {
+    display: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-default-dark;
+  }
+}
+
+.navigation__button {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}

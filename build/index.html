@@ -10,8 +10,33 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__container container">
+          <a class="header__logo logo" href="#">
+            <svg width="70" height="38" role="img" aria-hidden="true" focusable="false" aria-label="Логотип.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__navigation navigation">
+            <button class="navigation__button">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#">Преимущества</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Ближайшие круизы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
         <section class="intro">

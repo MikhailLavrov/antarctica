@@ -26,14 +26,20 @@ $tf-default: ease;
 $trans-default: 0.3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
-$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
-$trans-600:                         0.6s $tf-default;
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-600: 0.6s $tf-default;
 
 // Viewports
-$vp-320:                            320px;
-$vp-768:                            768px;
-$vp-1024:                           1024px;
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1366: 1366px;
 
 // Retina
-$retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Indents
+$desktop-indent: 103px;
+$tablet-indent: 45px;
+$mobile-indent: 15px;
