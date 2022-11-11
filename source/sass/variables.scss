@@ -11,7 +11,8 @@ $color-sapphire: #101a56;
 $color-prussian-blue: #002b66;
 
 // Shadows & gradients
-$text-shadow: 0 4px 4px rgba(#000000, 0.25);
+$base-shadow: 0 4px 4px rgba(#000000, 0.25);
+$light-gradient: to top, rgba($color-solitude, 0.9), rgba($color-solitude, 0.9);
 
 // Typography
 // переменная используемая в html для подключения скейлинга

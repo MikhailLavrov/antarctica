@@ -23,7 +23,7 @@
 }
 
 .header__logo svg {
-  filter: drop-shadow($text-shadow);
+  filter: drop-shadow($base-shadow);
 }
 
 .header__navigation .navigation__list {

@@ -39,7 +39,7 @@
 }
 
 .navigation__item--header a {
-  text-shadow: $text-shadow;
+  text-shadow: $base-shadow;
 
   @include vp-1023 {
     font-size: 14px;
