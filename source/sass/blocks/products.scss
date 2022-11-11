@@ -1,0 +1,171 @@
+// .products
+
+.products__container {
+  padding: 95px 118px 120px;
+
+  @include vp-1023 {
+    padding: 100px 60px;
+  }
+
+  @include vp-767 {
+    padding: 65px 25px;
+  }
+}
+
+.products__container h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  list-style: none;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.products__item {
+  min-height: 386px;
+  position: relative;
+
+  @include hover {
+    & .products__item-content {
+      z-index: 1;
+    }
+  }
+}
+
+.products__item-content {
+  padding: 35px 25px;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
+
+  @include vp-1023 {
+    padding: 35px;
+  }
+
+  @include vp-767 {
+    padding: 35px 25px;
+  }
+
+  color: $color-default-light;
+  background-color: $color-default-dark;
+}
+
+.products__item-content p {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.products__item-content dl {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.products__item-content dt {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.products__item-content dd {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 19.6px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.products__item-content button {
+  padding: 14px;
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: $color-default-light;
+  border: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    box-shadow: inset $base-shadow;
+  }
+}
+
+.products__item-image {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.products__item-image h3 {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+
+  @include vp-1023 {
+    bottom: 35px;
+    left: 35px;
+  }
+
+  @include vp-767 {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  color: $color-default-light;
+}
+
+.products__item-image img {
+  object-fit: cover;
+}

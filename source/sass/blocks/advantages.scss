@@ -81,6 +81,10 @@
       margin-bottom: 30px;
     }
   }
+
+  @include hover {
+    box-shadow: $base-shadow;
+  }
 }
 
 .advantages__item svg {

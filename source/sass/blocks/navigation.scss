@@ -29,6 +29,12 @@
       margin-bottom: 30px;
     }
   }
+
+  @include hover-focus {
+    & a {
+      text-shadow: $light-shadow;
+    }
+  }
 }
 
 .navigation__item a {

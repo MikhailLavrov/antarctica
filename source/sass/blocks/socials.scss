@@ -11,11 +11,15 @@
   }
 }
 
-// .socials__item {
-//   background-color: bisque;
-// }
-
 .socials__item a {
   display: flex;
   align-items: center;
+}
+
+.socials__item a {
+  @include hover-focus {
+    & svg {
+      filter: drop-shadow($light-shadow);
+    }
+  }
 }
