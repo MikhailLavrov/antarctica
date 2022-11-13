@@ -1,0 +1,111 @@
+.form {
+  padding: 50px;
+  width: 100%;
+  max-width: 403px;
+
+  background-color: $color-default-dark;
+
+  @include vp-1023 {
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    padding: 40px 30px;
+  }
+}
+
+.form legend {
+  margin-bottom: 35px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-light;
+
+  @include vp-767 {
+    line-height: 25.2px;
+    text-align: center;
+  }
+}
+
+.form fieldset {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.form__inputs {
+  margin-bottom: 20px;
+}
+
+.form__inputs input {
+  padding: 11px 16px;
+  width: 100%;
+
+  border: none;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba($color-default-dark, 0.7);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__submit label {
+  display: block;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-default-light;
+}
+
+// Default checkbox
+.form__checkbox {
+  position: absolute;
+
+  opacity: 0;
+  z-index: -1;
+
+  &:checked + .form__checkbox-mark {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.5L5.28571 7L11 1' stroke='%23101A56'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form__checkbox-mark {
+  width: 18px;
+  height: 18px;
+
+  background-color: $color-default-light;
+  box-sizing: border-box;
+  margin-right: 5px;
+
+  @include vp-767 {
+    margin-right: 8px;
+  }
+}
+
+
+.form__checkbox-name {
+  @include vp-767 {
+    max-width: 150px;
+  }
+}
+
+.form__button {
+  padding: 9px;
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}

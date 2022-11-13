@@ -1,0 +1,121 @@
+.booking {
+  padding: 50px 0;
+  min-height: 555px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $color-default-dark;
+  background-image:
+    image-set('../img/form-first.jpg' 1x, '../img/form-first@2x.jpg' 2x),
+    image-set('../img/form-first.webp' 1x, '../img/form-first@2x.webp' 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include vp-1023 {
+    padding: 100px 0;
+    min-height: 805px;
+
+    background-image:
+      image-set('../img/form-second.jpg' 1x, '../img/form-second@2x.jpg' 2x),
+      image-set('../img/form-second.webp' 1x, '../img/form-second@2x.webp' 2x);
+  }
+
+  @include vp-767 {
+    padding: 65px 0;
+    min-height: 760px;
+
+    background-image:
+      image-set('../img/form-third.jpg' 1x, '../img/form-third@2x.jpg' 2x),
+      image-set('../img/form-third.webp' 1x, '../img/form-third@2x.webp' 2x);
+  }
+}
+
+.booking__container {
+  @include vp-1023 {
+    padding: 0 174px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.booking__wrapper {
+  margin: 0 auto;
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: auto 403px;
+  column-gap: $tablet-indent;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    display: block;
+  }
+}
+
+.booking__info {
+  margin-right: auto;
+
+  @include vp-1023 {
+    margin-bottom: 60px;
+
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+}
+
+.booking__info h2 {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  word-wrap: break-word;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+}
+
+.booking__info p {
+  margin: 0;
+  max-width: 345px;
+
+  font-size: 18px;
+  line-height: 27px;
+
+  & br {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  @include vp-1023 {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+
+  @include vp-767 {
+    max-width: 257px;
+
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}

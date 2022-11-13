@@ -31,10 +31,10 @@
                 <a href="#advantages">Преимущества</a>
               </li>
               <li class="navigation__item navigation__item--header">
-                <a href="#">Направления</a>
+                <a href="#products">Направления</a>
               </li>
               <li class="navigation__item navigation__item--header">
-                <a href="#">Ближайшие круизы</a>
+                <a href="#booking">Ближайшие круизы</a>
               </li>
               <li class="navigation__item navigation__item--header">
                 <a href="#">Контакты</a>
@@ -96,13 +96,7 @@
           <div class="products__container container">
             <h2>Ближайшие круизы</h2>
             <ul class="products__list">
-
-
-
-
-              <li class="products__item">
-
-
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Астория”</h3>
                   <picture>
@@ -110,7 +104,6 @@
                     <img width="309" height="386" src="./img/products/cruise-astoria.jpg" srcset="./img/products/cruise-astoria@2x.jpg 2x" alt="Круиз Астория.">
                   </picture>
                 </div>
-
                 <div class="products__item-back">
                   <p>Круиз "Астория"</p>
                   <dl>
@@ -128,12 +121,8 @@
                   </dl>
                   <a href="#">Забронировать</a>
                 </div>
-
-
-
-
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Элайн”</h3>
                   <picture>
@@ -159,7 +148,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Атлантис”</h3>
                   <picture>
@@ -185,7 +174,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Одиссей”</h3>
                   <picture>
@@ -211,7 +200,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Олимпия”</h3>
                   <picture>
@@ -237,7 +226,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Аврора”</h3>
                   <picture>
@@ -263,7 +252,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Леонор”</h3>
                   <picture>
@@ -289,7 +278,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="products__item">
+              <li class="products__item center">
                 <div class="products__item-front">
                   <h3>Круиз “Минион - 1”</h3>
                   <picture>
@@ -316,6 +305,58 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="booking" id="booking">
+          <div class="booking__container container">
+            <div class="booking__wrapper">
+              <div class="booking__info">
+                <h2>Раннее бронирование</h2>
+                <p>Забронируйте тур <br>за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+              </div>
+              <form class="form" method="post" action="https://echo.htmlacademy.ru/" id="form-index">
+                <fieldset>
+                  <legend>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
+                  <div class="form__inputs">
+                    <label class="visually-hidden" for="name">Имя.</label>
+                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]\s*+$" minlength="2" maxlength="50" required>
+                    <label class="visually-hidden" for="phone">Телефон.</label>
+                    <input type="tel" id="phone" placeholder="Телефон" name="phone" required>
+                    <label class="visually-hidden" for="email">Email.</label>
+                    <input type="email" id="email" placeholder="Email" name="email" required>
+                  </div>
+                  <div class="form__submit">
+                    <label>
+                      <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required>
+                      <span class="form__checkbox-mark"></span>
+                      <span class="form__checkbox-name">Я согласен на обработку моих персональных данных</span>
+                    </label>
+                    <button class="form__button" type="submit" form="form-index">Оставить заявку</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Контактная информация.</h2>
+          <div class="contacts__container container">
+            <div id="map" style="width:100%;height:400px;"></div>
+            <div class="contacts__info">
+              <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+              <p>
+                <svg width="18" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Телефон.">
+                  <use xlink:href="img/sprite.svg#marker"></use>
+                </svg>
+                г. Санкт Петербург, ул. Большая Конюшенная, 19/8
+              </p>
+              <a href="tel:88002000000">
+                <svg width="18" height="18" role="img" aria-hidden="true" focusable="false" aria-label="Телефон.">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                8-800-200-00-00
+              </a>
+            </div>
           </div>
         </section>
       </main>
@@ -368,7 +409,7 @@
         </div>
       </footer>
     </div>
-
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvNrfyafCsZnHNQ8ALLfUMJ8wZ_-5wyEI&callback=initMap"></script> -->
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
