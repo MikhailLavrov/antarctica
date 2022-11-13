@@ -45,11 +45,11 @@
 .booking__wrapper {
   margin: 0 auto;
   max-width: 1040px;
+
   display: grid;
   grid-template-columns: auto 403px;
   column-gap: $tablet-indent;
   align-items: center;
-  flex-wrap: wrap;
 
   @include vp-1023 {
     display: block;

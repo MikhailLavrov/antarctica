@@ -1,10 +1,12 @@
 .socials {
   padding: 0;
   margin: 0;
+  width: 106px;
+
   display: flex;
   justify-content: space-between;
+
   list-style: none;
-  width: 106px;
 
   @include vp-1023 {
     width: 87px;

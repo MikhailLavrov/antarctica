@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {navMenuOpen} from './utils/navigation';
 import {initPhoneMask} from './utils/phone-mask';
+import {colorHeaderOnScroll} from './utils/header-scroll';
 // import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initPhoneMask();
+    colorHeaderOnScroll();
   });
 });
 

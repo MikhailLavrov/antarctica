@@ -13,8 +13,14 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 33px;
 
   list-style: none;
+
+  @include vp-1023 {
+    gap: 23px;
+  }
 }
 
 .navigation__item {

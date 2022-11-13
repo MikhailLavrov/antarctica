@@ -57,8 +57,8 @@
 }
 
 .form__submit label {
-  display: block;
   margin-bottom: 30px;
+
   display: flex;
   align-items: center;
 
@@ -82,12 +82,12 @@
 }
 
 .form__checkbox-mark {
+  margin-right: 5px;
   width: 18px;
   height: 18px;
 
   background-color: $color-default-light;
   box-sizing: border-box;
-  margin-right: 5px;
 
   @include vp-767 {
     margin-right: 8px;

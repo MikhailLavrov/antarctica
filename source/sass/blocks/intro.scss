@@ -5,8 +5,8 @@
 
   background-color: $color-default-dark;
   background-image:
-    image-set('../img/hero-first.jpg' 1x, '../img/hero-first@2x.jpg' 2x),
-    image-set('../img/hero-first.webp' 1x, '../img/hero-first@2x.webp' 2x);
+    image-set('../img/intro.jpg' 1x, '../img/intro@2x.jpg' 2x),
+    image-set('../img/intro.webp' 1x, '../img/intro@2x.webp' 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,10 +18,6 @@
     margin-top: -$header-height-tablet;
     padding: $header-height-tablet 0;
     min-height: 638px;
-
-    background-image:
-      image-set('../img/hero-second.jpg' 1x, '../img/hero-second@2x.jpg' 2x),
-      image-set('../img/hero-second.webp' 1x, '../img/hero-second@2x.webp' 2x);
 
     filter: none;
   }

@@ -1,8 +1,9 @@
 .container {
-  width: 100%;
-  max-width: $vp-1024;
   margin: 0 auto;
   padding: 0 $desktop-indent;
+  
+  width: 100%;
+  max-width: $vp-1024;
 
   @media (min-width: $vp-1024) {
     max-width: calc($vp-1366 + $desktop-indent * 2);

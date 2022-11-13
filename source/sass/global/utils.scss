@@ -17,6 +17,10 @@
   }
 }
 
+.is_scrolled .header {
+  background-color: rgba($color-default-dark, 0.6);
+}
+
 .visually-hidden {
   position: absolute;
 

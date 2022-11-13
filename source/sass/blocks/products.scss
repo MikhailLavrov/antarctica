@@ -53,22 +53,15 @@
 
   @include vp-767 {
     max-width: 100%;
-    display: block;
     grid-template-columns: repeat(auto-fill, 270px);
   }
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-
 .products__item {
-  position: relative;
   width: 260px;
   min-height: 386px;
+
+  position: relative;
 
   @include vp-1023 {
     width: 309px;
@@ -91,21 +84,34 @@
 
 .products__item-front,
 .products__item-back {
-  position: absolute;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  backface-visibility: hidden;
 
+  position: absolute;
+
+  backface-visibility: hidden;
+  overflow: hidden;
   transition: transform 0.6s linear;
 }
 
 .products__item-front {
+  height: 100%;
+
   transform: perspective(1000px) rotateY(0deg);
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url(.jpg);
+  }
 }
 
 .products__item-front img {
   height: 100%;
+
   object-fit: cover;
 }
 
@@ -120,6 +126,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 2;
 
   @include vp-1023 {
     padding: 35px;
@@ -135,7 +142,9 @@
 .products__item-back {
   padding: 35px 25px;
   width: 100%;
+
   color: $color-default-light;
+
   background-color: $color-default-dark;
   transform: perspective(1000px) rotateY(180deg);
 
@@ -181,9 +190,10 @@
 }
 
 .products__item-back a {
-  display: block;
   padding: 9px 10px;
   width: 100%;
+  
+  display: block;
 
   font-weight: 600;
   font-size: 14px;
