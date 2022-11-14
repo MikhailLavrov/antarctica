@@ -39,6 +39,12 @@
   margin-bottom: 20px;
 }
 
+.form__input-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 .form__inputs input {
   padding: 11px 16px;
   width: 100%;
@@ -49,10 +55,6 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba($color-default-dark, 0.7);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
   }
 }
 

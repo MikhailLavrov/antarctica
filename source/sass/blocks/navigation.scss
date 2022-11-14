@@ -29,6 +29,7 @@
 
 .navigation__item {
   display: flex;
+
   @include hover-focus {
     & a {
       text-shadow: $light-shadow;

@@ -314,27 +314,35 @@
                 <h2>Раннее бронирование</h2>
                 <p>Забронируйте тур <br>за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
               </div>
-              <form class="form" method="post" action="https://echo.htmlacademy.ru/" id="form-index">
-                <fieldset>
-                  <legend>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
-                  <div class="form__inputs">
-                    <label class="visually-hidden" for="name">Имя.</label>
-                    <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]\s*+$" minlength="2" maxlength="50" required>
-                    <label class="visually-hidden" for="phone">Телефон.</label>
-                    <input type="tel" id="phone" placeholder="Телефон" name="phone" required>
-                    <label class="visually-hidden" for="email">Email.</label>
-                    <input type="email" id="email" placeholder="Email" name="email" required>
-                  </div>
-                  <div class="form__submit">
-                    <label>
-                      <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required>
-                      <span class="form__checkbox-mark"></span>
-                      <span class="form__checkbox-name">Я согласен на обработку моих персональных данных</span>
-                    </label>
-                    <button class="form__button" type="submit" form="form-index">Оставить заявку</button>
-                  </div>
-                </fieldset>
-              </form>
+              <div class="booking__form" data-validate="data-validate">
+                <form class="form" method="post" action="https://echo.htmlacademy.ru/" id="form-index">
+                  <fieldset>
+                    <legend>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
+                    <div class="form__inputs">
+                      <div class="form__input-wrapper" data-validate-type="text" data-limitations="name">
+                        <label class="visually-hidden" for="name">Имя.</label>
+                        <input type="text" id="name" placeholder="Имя" name="name" minlength="2" maxlength="50" required>
+                      </div>
+                      <div class="form__input-wrapper" data-validate-type="phone">
+                        <label class="visually-hidden" for="phone">Телефон.</label>
+                        <input type="tel" id="phone" placeholder="Телефон" name="phone" required>
+                      </div>
+                      <div class="form__input-wrapper" data-validate-type="email">
+                        <label class="visually-hidden" for="email">Email.</label>
+                        <input type="email" id="email" placeholder="Email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="form__submit">
+                      <label>
+                        <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked required>
+                        <span class="form__checkbox-mark"></span>
+                        <span class="form__checkbox-name">Я согласен на обработку моих персональных данных</span>
+                      </label>
+                      <button class="form__button" type="submit" form="form-index">Оставить заявку</button>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
         </section>

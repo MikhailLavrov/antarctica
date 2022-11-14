@@ -832,8 +832,7 @@ button,
   padding: 108px 0;
   min-height: 650px;
   background-color: #011c40;
-  background-image: -webkit-image-set(url("../img/intro.jpg") 1x, url("../img/intro@2x.jpg") 2x), -webkit-image-set(url("../img/intro.webp") 1x, url("../img/intro@2x.webp") 2x);
-  background-image: image-set("../img/intro.jpg" 1x, "../img/intro@2x.jpg" 2x), image-set("../img/intro.webp" 1x, "../img/intro@2x.webp" 2x);
+  background-image: url("../img/intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -899,10 +898,9 @@ button,
 
 .advantages {
   background-color: #f9fbfd;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 236, 246, 0.9)), to(rgba(227, 236, 246, 0.9))), image-set("../../img/advantages.jpg" 1x, "../../img/advantages@2x.jpg" 2x), image-set("../../img/advantages.webp" 1x, "../../img/advantages@2x.webp" 2x);
-  background-image: -o-linear-gradient(bottom, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), image-set("../../img/advantages.jpg" 1x, "../../img/advantages@2x.jpg" 2x), image-set("../../img/advantages.webp" 1x, "../../img/advantages@2x.webp" 2x);
-  background-image: linear-gradient(to top, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), -webkit-image-set(url("../../img/advantages.jpg") 1x, url("../../img/advantages@2x.jpg") 2x), -webkit-image-set(url("../../img/advantages.webp") 1x, url("../../img/advantages@2x.webp") 2x);
-  background-image: linear-gradient(to top, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), image-set("../../img/advantages.jpg" 1x, "../../img/advantages@2x.jpg" 2x), image-set("../../img/advantages.webp" 1x, "../../img/advantages@2x.webp" 2x);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 236, 246, 0.9)), to(rgba(227, 236, 246, 0.9))), url("../img/advantages.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), url("../img/advantages.jpg");
+  background-image: linear-gradient(to top, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), url("../img/advantages.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1034,9 +1032,9 @@ button,
   height: 100%;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url(.jpg);
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url(.jpg);
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url(.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(#011c40));
+  background: -o-linear-gradient(top, transparent 50%, #011c40 100%);
+  background: linear-gradient(180deg, transparent 50%, #011c40 100%);
 }
 
 .products__item-front img {
@@ -1125,8 +1123,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   background-color: #011c40;
-  background-image: -webkit-image-set(url("../img/form-first.jpg") 1x, url("../img/form-first@2x.jpg") 2x), -webkit-image-set(url("../img/form-first.webp") 1x, url("../img/form-first@2x.webp") 2x);
-  background-image: image-set("../img/form-first.jpg" 1x, "../img/form-first@2x.jpg" 2x), image-set("../img/form-first.webp" 1x, "../img/form-first@2x.webp" 2x);
+  background-image: url("../img/form-first.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1142,9 +1139,13 @@ button,
   -webkit-column-gap: 45px;
   -moz-column-gap: 45px;
   column-gap: 45px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+}
+
+.booking__info,
+.booking__form {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .booking__info {
@@ -1196,6 +1197,10 @@ button,
   margin-bottom: 20px;
 }
 
+.form__input-wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .form__inputs input {
   padding: 11px 16px;
   width: 100%;
@@ -1230,10 +1235,6 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
-}
-
-.form__inputs input:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .form__submit label {
@@ -1300,8 +1301,7 @@ button,
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: -webkit-image-set(url("../img/map.jpg") 1x, url("../img/map@2x.jpg") 2x), -webkit-image-set(url("../img/map.webp") 1x, url("../img/map@2x.webp") 2x);
-  background-image: image-set("../img/map.jpg" 1x, "../img/map@2x.jpg" 2x), image-set("../img/map.webp" 1x, "../img/map@2x.webp" 2x);
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1316,6 +1316,9 @@ button,
 
 .contacts__info svg {
   margin-right: 10px;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .contacts__info h3 {
@@ -1346,12 +1349,6 @@ button,
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-}
-
-.contacts__info svg {
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  transform: translateY(4px);
 }
 
 /* @mixin hover-focus {
@@ -1543,8 +1540,7 @@ button,
   .booking {
     padding: 100px 0;
     min-height: 805px;
-    background-image: -webkit-image-set(url("../img/form-second.jpg") 1x, url("../img/form-second@2x.jpg") 2x), -webkit-image-set(url("../img/form-second.webp") 1x, url("../img/form-second@2x.webp") 2x);
-    background-image: image-set("../img/form-second.jpg" 1x, "../img/form-second@2x.jpg" 2x), image-set("../img/form-second.webp" 1x, "../img/form-second@2x.webp" 2x);
+    background-image: url("../img/form-second.jpg");
   }
 
   .booking__container {
@@ -1589,6 +1585,12 @@ button,
 
   .contacts__map {
     min-height: 335px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .booking {
+    background-image: url("../img/form-second@2x.jpg");
   }
 }
 
@@ -1798,8 +1800,7 @@ button,
   .booking {
     padding: 65px 0;
     min-height: 760px;
-    background-image: -webkit-image-set(url("../img/form-third.jpg") 1x, url("../img/form-third@2x.jpg") 2x), -webkit-image-set(url("../img/form-third.webp") 1x, url("../img/form-third@2x.webp") 2x);
-    background-image: image-set("../img/form-third.jpg" 1x, "../img/form-third@2x.jpg" 2x), image-set("../img/form-third.webp" 1x, "../img/form-third@2x.webp" 2x);
+    background-image: url("../img/form-third.jpg");
   }
 
   .booking__container {
@@ -1865,6 +1866,12 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .booking {
+    background-image: url("../img/form-third@2x.jpg");
+  }
+}
+
 @media (hover: hover) {
   .navigation__item:hover:not(.focus-visible) a {
     text-shadow: 0 4px 4px rgba(255, 255, 255, 0.75);
@@ -1893,5 +1900,25 @@ button,
   .products__item-back a:hover:not(.focus-visible) {
     -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/intro@2x.jpg");
+  }
+
+  .advantages {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 236, 246, 0.9)), to(rgba(227, 236, 246, 0.9))), url("../img/advantages@2x.jpg");
+    background-image: -o-linear-gradient(bottom, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), url("../img/advantages@2x.jpg");
+    background-image: linear-gradient(to top, rgba(227, 236, 246, 0.9), rgba(227, 236, 246, 0.9)), url("../img/advantages@2x.jpg");
+  }
+
+  .booking {
+    background-image: url("../img/form-first@2x.jpg");
+  }
+
+  .contacts__map {
+    background-image: url("../img/map@2x.jpg");
   }
 }

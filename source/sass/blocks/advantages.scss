@@ -2,11 +2,16 @@
   background-color: $color-default-light;
   background-image:
     linear-gradient($light-gradient),
-    image-set('../../img/advantages.jpg' 1x, '../../img/advantages@2x.jpg' 2x),
-    image-set('../../img/advantages.webp' 1x, '../../img/advantages@2x.webp' 2x);
+    url("../img/advantages.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include retina {
+    background-image:
+      linear-gradient($light-gradient),
+      url("../img/advantages@2x.jpg");
+  }
 }
 
 .advantages__container {
