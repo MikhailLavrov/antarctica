@@ -21,21 +21,14 @@
   @include vp-1023 {
     gap: 23px;
   }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
 }
 
 .navigation__item {
   display: flex;
-
-  @include vp-767 {
-    &:not(:last-child) {
-      margin-bottom: 23px;
-    }
-
-    &:last-child {
-      margin-bottom: 30px;
-    }
-  }
-
   @include hover-focus {
     & a {
       text-shadow: $light-shadow;
