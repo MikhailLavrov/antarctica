@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {navMenuOpen} from './utils/navigation';
 import {initPhoneMask} from './utils/phone-mask';
 import {colorHeaderOnScroll} from './utils/header-scroll';
+import {mapInit as yMapInit} from './utils/map-init';
 // import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initPhoneMask();
     colorHeaderOnScroll();
+    yMapInit();
   });
 });
 
