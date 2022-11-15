@@ -32,10 +32,12 @@
 }
 
 .header__navigation .navigation__list {
-  width: 594px;
+  max-width: 650px;
+
+  transform: translateX(10px);
 
   @include vp-1023 {
-    width: 503px;
+    max-width: 585px;
   }
 
   @include vp-767 {

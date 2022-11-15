@@ -12,9 +12,8 @@
   padding: 0;
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 33px;
+  gap: 13px;
 
   list-style: none;
 
@@ -38,6 +37,7 @@
 }
 
 .navigation__item a {
+  padding: 10px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;

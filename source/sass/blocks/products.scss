@@ -12,7 +12,7 @@
 
 .products__container h2 {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   padding: 0;
 
   font-weight: 600;
@@ -26,7 +26,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     font-size: 24px;
     line-height: 36px;
@@ -34,42 +34,32 @@
 }
 
 .products__list {
-  margin: 0 auto;
   padding: 0;
-  max-width: 1130px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
-  grid-auto-flow: dense;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
 
   list-style: none;
-
-  @include vp-1023 {
-    max-width: 648px;
-    grid-template-columns: repeat(auto-fill, 309px);
-  }
-
-  @include vp-767 {
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fill, 270px);
-  }
 }
 
 .products__item {
-  width: 260px;
-  min-height: 386px;
-
-  position: relative;
+  padding: 15px;
+  min-width: 290px;
 
   @include vp-1023 {
-    width: 309px;
+    min-width: 324px;
   }
 
   @include vp-767 {
-    width: 270px;
+    min-width: 300px;
   }
+}
+
+.products__item-wrapper {
+  min-height: 386px;
+
+  position: relative;
 
   @include hover-focus {
     & .products__item-front {
@@ -85,6 +75,7 @@
 .products__item-front,
 .products__item-back {
   width: 100%;
+  height: 100%;
 
   position: absolute;
 
@@ -169,6 +160,16 @@
 .products__item-back dl {
   margin: 0;
   margin-bottom: 25px;
+  height: 68%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-default-light;
+  }
 }
 
 .products__item-back dt {
@@ -191,7 +192,6 @@
 
 .products__item-back a {
   padding: 9px 10px;
-  width: 100%;
 
   display: block;
 
