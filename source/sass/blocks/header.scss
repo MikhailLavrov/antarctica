@@ -8,7 +8,7 @@
   z-index: 10;
 
   @include vp-1023 {
-    padding: 26.5px 0;
+    padding: 27.5px 0;
 
     position: relative;
   }
@@ -39,7 +39,7 @@
   @include vp-1023 {
     max-width: 585px;
 
-    transform: translateX(5px);
+    transform: translateX(4px);
   }
 
   @include vp-767 {

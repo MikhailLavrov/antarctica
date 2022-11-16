@@ -1302,7 +1302,7 @@ button,
 }
 
 .contacts {
-  padding: 120px 0;
+  padding: 120px 0 91px;
 }
 
 .contacts__container {
@@ -1330,6 +1330,7 @@ button,
 }
 
 .contacts__info {
+  margin-bottom: 30px;
   max-width: 500px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -1426,15 +1427,15 @@ button,
   }
 
   .header {
-    padding: 26.5px 0;
+    padding: 27.5px 0;
     position: relative;
   }
 
   .header__navigation .navigation__list {
     max-width: 585px;
-    -webkit-transform: translateX(5px);
-    -ms-transform: translateX(5px);
-    transform: translateX(5px);
+    -webkit-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    transform: translateX(4px);
   }
 
   .logo svg {
@@ -1442,8 +1443,12 @@ button,
     height: 20px;
   }
 
+  .navigation__list {
+    gap: 15px;
+  }
+
   .navigation__item a {
-    padding: 5px;
+    padding: 4px;
   }
 
   .navigation__item--header a {
@@ -1460,8 +1465,12 @@ button,
     width: 87px;
   }
 
+  .footer {
+    padding: 50px 0 47px;
+  }
+
   .footer .logo {
-    margin-right: 25px;
+    margin-right: 21px;
   }
 
   .footer .navigation__list {
@@ -1477,7 +1486,7 @@ button,
   }
 
   .intro__content {
-    margin-top: 195px;
+    margin-top: 188px;
     margin-left: 0;
     text-shadow: none;
   }
@@ -1493,23 +1502,30 @@ button,
   }
 
   .about {
-    padding: 100px 0;
+    padding: 90px 0 94px;
   }
 
   .about__container {
-    -webkit-column-gap: 25px;
-    -moz-column-gap: 25px;
-    column-gap: 25px;
+    padding: 0 50px 0 45px;
+    -ms-grid-columns: 320px auto;
+    grid-template-columns: 320px auto;
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
   }
 
   .about__content h2 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 26px;
     line-height: 36.4px;
   }
 
+  .about__photo {
+    margin-top: 10px;
+  }
+
   .advantages__container {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
 
@@ -1525,7 +1541,16 @@ button,
   }
 
   .advantages__item {
-    padding: 26px 16px 25px 20px;
+    padding: 25px 17px 18px 20px;
+  }
+
+  .advantages__item:last-child h3 {
+    margin-bottom: 20px;
+  }
+
+  .advantages__item svg {
+    width: auto;
+    height: 10%;
   }
 
   .advantages__item h3 {
@@ -1536,8 +1561,12 @@ button,
     display: block;
   }
 
+  .advantages__item p br {
+    display: none;
+  }
+
   .products {
-    padding: 100px 0;
+    padding: 90px 0 70px;
   }
 
   .products__container h2 {
@@ -1546,19 +1575,19 @@ button,
   }
 
   .products__item {
-    min-width: 324px;
+    min-width: 339px;
   }
 
   .products__item-front h3 {
-    padding: 35px;
+    padding: 26px 35px;
   }
 
   .products__item-back {
-    padding: 35px;
+    padding: 30px 35px;
   }
 
   .booking {
-    padding: 100px 0;
+    padding: 88px 0;
     min-height: 805px;
   }
 
@@ -1571,12 +1600,12 @@ button,
   }
 
   .booking__info {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     text-align: center;
   }
 
   .booking__info h2 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-size: 34px;
     line-height: 51px;
   }
@@ -1604,6 +1633,22 @@ button,
 
   .contacts__map {
     min-height: 335px;
+  }
+
+  .contacts__info {
+    margin-bottom: 0;
+  }
+
+  .contacts__info svg {
+    margin-right: 12px;
+  }
+
+  .contacts__info h3 {
+    margin-bottom: 25px;
+  }
+
+  .contacts__info p {
+    margin-bottom: 21px;
   }
 }
 
@@ -1685,7 +1730,7 @@ button,
   }
 
   .footer {
-    padding: 40px 0;
+    padding: 40px 0 37px;
   }
 
   .footer__container {
@@ -1700,15 +1745,17 @@ button,
 
   .footer .logo {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .footer .navigation__list {
+    margin-bottom: 20px;
     max-width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 9px;
   }
 
   .footer .socials {
@@ -1722,11 +1769,11 @@ button,
   }
 
   .intro__content {
-    margin-top: 120px;
+    margin-top: 114px;
   }
 
   .intro__content h1 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 45px;
   }
@@ -1737,7 +1784,7 @@ button,
   }
 
   .about {
-    padding: 65px 0 85px;
+    padding: 57px 0 85px;
   }
 
   .about__container {
@@ -1748,7 +1795,11 @@ button,
   }
 
   .about__content {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
+  }
+
+  .about__content br {
+    display: none;
   }
 
   .about__content h2 {
@@ -1757,12 +1808,12 @@ button,
   }
 
   .advantages__container {
-    padding-top: 65px;
+    padding-top: 57px;
     padding-bottom: 65px;
   }
 
   .advantages h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -1772,23 +1823,42 @@ button,
   }
 
   .advantages__item {
-    padding: 25px 15px 25px 20px;
+    padding: 25px 20px 21px;
   }
 
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  .advantages__item h3 br {
-    display: none;
+  .advantages__item:first-child svg {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__item:last-child svg {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantages__item:last-child h3 {
+    margin-bottom: 10px;
+  }
+
+  .advantages__item svg {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__item h3 {
+    margin-bottom: 10px;
   }
 
   .products {
-    padding: 65px 0;
+    padding: 56px 0 34px;
   }
 
   .products__container h2 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -1798,15 +1868,15 @@ button,
   }
 
   .products__item-front h3 {
-    padding: 25px;
+    padding: 18px 25px;
   }
 
   .products__item-back {
-    padding: 35px 25px;
+    padding: 28px 25px;
   }
 
   .booking {
-    padding: 65px 0;
+    padding: 58px 0;
     min-height: 760px;
   }
 
@@ -1815,10 +1885,11 @@ button,
   }
 
   .booking__info {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .booking__info h2 {
+    margin-bottom: 13px;
     font-size: 24px;
     line-height: 31.2px;
   }
@@ -1834,12 +1905,20 @@ button,
   }
 
   .form {
-    padding: 40px 30px;
+    padding: 36px 30px 39px;
   }
 
   .form legend {
     line-height: 25.2px;
     text-align: center;
+  }
+
+  .form__inputs {
+    margin-bottom: 18px;
+  }
+
+  .form__submit label {
+    margin-bottom: 26px;
   }
 
   .form__checkbox-mark {
@@ -1851,7 +1930,7 @@ button,
   }
 
   .contacts {
-    padding: 65px 0;
+    padding: 57px 0 39px;
   }
 
   .contacts__container {

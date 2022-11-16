@@ -19,12 +19,12 @@
   padding-bottom: 120px;
 
   @include vp-1023 {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 57px;
     padding-bottom: 65px;
   }
 }
@@ -44,7 +44,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     font-size: 24px;
     line-height: 36px;
@@ -76,14 +76,32 @@
   background-color: $color-default-light;
 
   @include vp-1023 {
-    padding: 26px 16px 25px 20px;
+    padding: 25px 17px 18px 20px;
+
+    &:last-child h3 {
+      margin-bottom: 20px;
+    }
   }
 
   @include vp-767 {
-    padding: 25px 15px 25px 20px;
+    padding: 25px 20px 21px;
 
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    &:first-child svg {
+      width: 21px;
+      height: 26px;
+    }
+
+    &:last-child svg {
+      width: 36px;
+      height: 26px;
+    }
+
+    &:last-child h3 {
+      margin-bottom: 10px;
     }
   }
 
@@ -94,6 +112,16 @@
 
 .advantages__item svg {
   margin-bottom: 13px;
+
+  @include vp-1023 {
+    width: auto;
+    height: 10%;
+  }
+
+  @include vp-767 {
+    width: 27px;
+    height: 26px;
+  }
 }
 
 .advantages__item h3 {
@@ -107,17 +135,17 @@
   @include vp-1023 {
     line-height: 25.2px;
   }
-}
 
-.advantages__item h3 br {
-  display: none;
+  & br {
+    display: none;
 
-  @include vp-1023 {
-    display: block;
+    @include vp-1023 {
+      display: block;
+    }
   }
 
   @include vp-767 {
-    display: none;
+    margin-bottom: 10px;
   }
 }
 
@@ -126,4 +154,10 @@
 
   font-size: 14px;
   line-height: 19.6px;
+
+  & br {
+    @include vp-1023 {
+      display: none;
+    }
+  }
 }

@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 40px 30px;
+    padding: 36px 30px 39px;
   }
 }
 
@@ -37,6 +37,10 @@
 
 .form__inputs {
   margin-bottom: 21px;
+
+  @include vp-767 {
+    margin-bottom: 18px;
+  }
 }
 
 .form__input-wrapper {
@@ -67,6 +71,10 @@
   font-size: 10px;
   line-height: 13px;
   color: $color-default-light;
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
 }
 
 // Default checkbox

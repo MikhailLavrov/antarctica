@@ -2,11 +2,11 @@
   padding: 86px 0 89px;
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding: 90px 0 70px;
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 56px 0 34px;
   }
 }
 
@@ -26,7 +26,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     font-size: 24px;
     line-height: 36px;
@@ -48,7 +48,7 @@
   min-width: 290px;
 
   @include vp-1023 {
-    min-width: 324px;
+    min-width: 339px;
   }
 
   @include vp-767 {
@@ -120,11 +120,11 @@
   z-index: 2;
 
   @include vp-1023 {
-    padding: 35px;
+    padding: 26px 35px;
   }
 
   @include vp-767 {
-    padding: 25px;
+    padding: 18px 25px;
   }
 
   color: $color-default-light;
@@ -140,11 +140,11 @@
   transform: perspective(1000px) rotateY(180deg);
 
   @include vp-1023 {
-    padding: 35px;
+    padding: 30px 35px;
   }
 
   @include vp-767 {
-    padding: 35px 25px;
+    padding: 28px 25px;
   }
 }
 
