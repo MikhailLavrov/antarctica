@@ -1,20 +1,40 @@
+let bodyElement = document.querySelector('.body');
+let navButtonElement = bodyElement.querySelector('.navigation__button');
+let headerLogoElement = bodyElement.querySelector('.header__logo').querySelector('svg');
+let sectionElement = bodyElement.querySelector('section');
+let pageContent = sectionElement.innerHTML;
+
+const closeNavigation = ({target}) => {
+  if (!target.closest('.navigation') || target.closest('.navigation__item')) {
+    bodyElement.classList.remove('menu-opened');
+    bodyElement.classList.remove('scroll-lock');
+
+    document.removeEventListener('click', closeNavigation);
+  }
+
+  // скрывает контент страницы при ОТКРЫТОМ меню
+  if (bodyElement.classList.contains('menu-opened')) {
+    sectionElement.innerHTML = '';
+    headerLogoElement.classList.add('visually-hidden');
+  } else {
+    sectionElement.innerHTML = pageContent;
+    headerLogoElement.classList.remove('visually-hidden');
+  }
+};
+
 // Mobile menu toggle
 const navMenuOpen = () => {
-  let mainBody = document.querySelector('.body');
-  let pageWrapper = document.querySelector('.wrapper');
-  let navToggle = document.querySelector('.navigation__button');
+  if (bodyElement.classList.contains('body--nojs')) {
+    bodyElement.classList.remove('body--nojs');
+  }
+  if (navButtonElement) {
+    navButtonElement.addEventListener('click', function () {
+      bodyElement.classList.toggle('menu-opened');
+      bodyElement.classList.toggle('scroll-lock');
 
-  mainBody.classList.remove('body--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (pageWrapper.classList.contains('menu--closed')) {
-      pageWrapper.classList.remove('menu--closed');
-      pageWrapper.classList.add('menu--opened');
-    } else {
-      pageWrapper.classList.add('menu--closed');
-      pageWrapper.classList.remove('menu--opened');
-    }
-  });
+      document.addEventListener('click', closeNavigation);
+    });
+  }
 };
 
 export {navMenuOpen};

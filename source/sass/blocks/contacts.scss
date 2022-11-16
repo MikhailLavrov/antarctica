@@ -1,5 +1,5 @@
 .contacts {
-  padding: 120px 0 91px;
+  padding: 120px 0;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -51,7 +51,6 @@
 }
 
 .contacts__info {
-  margin-bottom: 30px;
   max-width: 500px;
   align-self: center;
 

@@ -1,5 +1,4 @@
 .intro {
-  margin-top: -108px;
   padding: $header-height-desktop 0;
   min-height: 650px;
 
@@ -17,7 +16,7 @@
   filter: drop-shadow($base-shadow);
 
   @include vp-1023 {
-    margin-top: -$header-height-tablet;
+    // margin-top: -$header-height-tablet;
     padding: $header-height-tablet 0;
     min-height: 638px;
 
@@ -25,7 +24,7 @@
   }
 
   @include vp-767 {
-    margin-top: -$header-height-mobile;
+    // margin-top: -$header-height-mobile;
     padding: $header-height-mobile 0;
     min-height: 500px;
   }

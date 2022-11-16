@@ -46,6 +46,7 @@
 .products__item {
   padding: 15px;
   min-width: 290px;
+  width: 25%;
 
   @include vp-1023 {
     min-width: 339px;

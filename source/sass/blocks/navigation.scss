@@ -13,16 +13,13 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
 
   list-style: none;
+}
 
-  @include vp-1023 {
-    gap: 15px;
-  }
-
+.navigation__list--header {
   @include vp-767 {
-    margin-bottom: 30px;
+    display: none;
   }
 }
 
@@ -72,15 +69,33 @@
 }
 
 .navigation__button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
   display: none;
+
+  position: absolute;
+  top: 18px;
+  right: 15px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background-color: $color-default-light;
+    box-shadow: 0 -6px 0 0 $color-default-light, 0 6px 0 0 $color-default-light;
+  }
 
   @include vp-767 {
     display: block;
-
-    position: absolute;
-    top: 18px;
-    right: 15px;
-
-    z-index: 100;
   }
 }

@@ -37,9 +37,11 @@
 
 .footer .navigation__list {
   max-width: 620px;
+  gap: 18px;
 
   @include vp-1023 {
     max-width: 450px;
+    gap: 15px;
   }
 
   @include vp-767 {

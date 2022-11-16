@@ -1,5 +1,5 @@
 const colorHeaderOnScroll = () => {
-  let minOffset = 50;
+  let minOffset = 100;
   window.onscroll = function () {
     let hasClass = document.body.classList.contains('is_scrolled');
 
