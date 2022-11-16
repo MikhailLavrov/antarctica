@@ -664,9 +664,9 @@ button,
 
 .header__navigation .navigation__list {
   max-width: 650px;
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 .navigation__button {
@@ -745,7 +745,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 18px;
   list-style: none;
 }
 
@@ -760,7 +760,7 @@ button,
 }
 
 .navigation__item a {
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
@@ -817,11 +817,11 @@ button,
 }
 
 .footer .logo {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .footer .navigation__list {
-  width: 594px;
+  max-width: 620px;
 }
 
 .footer .socials {
@@ -843,7 +843,7 @@ button,
 }
 
 .intro__content {
-  margin-top: 175px;
+  margin-top: 162px;
   margin-left: 95px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -851,7 +851,7 @@ button,
 
 .intro__content h1 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -872,21 +872,34 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 88px;
-  -moz-column-gap: 88px;
-  column-gap: 88px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
 }
 
-.about__text h2 {
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about__content h2 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   padding: 0;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
 }
 
-.about__text p {
+.about__content p {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -908,13 +921,13 @@ button,
 }
 
 .advantages__container {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px;
 }
 
 .advantages h2 {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -935,17 +948,17 @@ button,
 }
 
 .advantages__item {
-  padding: 30px 30px 50px;
+  padding: 30px 30px 45px;
   background-color: #f9fbfd;
 }
 
 .advantages__item svg {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .advantages__item h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -962,12 +975,12 @@ button,
 }
 
 .products {
-  padding: 95px 0 120px;
+  padding: 86px 0 89px;
 }
 
 .products__container h2 {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 33px;
   padding: 0;
   font-weight: 600;
   font-size: 28px;
@@ -1049,7 +1062,7 @@ button,
 
 .products__item-front h3 {
   margin: 0;
-  padding: 30px;
+  padding: 23px 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1061,7 +1074,7 @@ button,
 }
 
 .products__item-back {
-  padding: 35px 25px;
+  padding: 29px 25px;
   width: 100%;
   color: #f9fbfd;
   background-color: #011c40;
@@ -1079,7 +1092,7 @@ button,
 
 .products__item-back dl {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   height: 68%;
   overflow: auto;
 }
@@ -1106,7 +1119,7 @@ button,
 }
 
 .products__item-back dd:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .products__item-back a {
@@ -1132,9 +1145,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: #011c40;
   background-image: url("../img/form.jpg");
   background-repeat: no-repeat;
@@ -1166,7 +1176,7 @@ button,
 
 .booking__info h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -1185,14 +1195,14 @@ button,
 }
 
 .form {
-  padding: 50px;
+  padding: 44px 50px 49px;
   width: 100%;
   max-width: 403px;
   background-color: #011c40;
 }
 
 .form legend {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1206,7 +1216,7 @@ button,
 }
 
 .form__inputs {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .form__input-wrapper:not(:last-child) {
@@ -1214,7 +1224,7 @@ button,
 }
 
 .form__inputs input {
-  padding: 11px 16px;
+  padding: 12px 16px;
   width: 100%;
   border: none;
 }
@@ -1250,7 +1260,7 @@ button,
 }
 
 .form__submit label {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1284,7 +1294,7 @@ button,
 }
 
 .form__button {
-  padding: 9px;
+  padding: 10px;
   width: 100%;
   font-weight: 600;
   font-size: 14px;
@@ -1335,7 +1345,7 @@ button,
 
 .contacts__info h3 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1416,12 +1426,15 @@ button,
   }
 
   .header {
-    padding: 30px 0;
+    padding: 26.5px 0;
     position: relative;
   }
 
   .header__navigation .navigation__list {
     max-width: 585px;
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
   }
 
   .logo svg {
@@ -1429,8 +1442,8 @@ button,
     height: 20px;
   }
 
-  .navigation__list {
-    gap: 23px;
+  .navigation__item a {
+    padding: 5px;
   }
 
   .navigation__item--header a {
@@ -1452,7 +1465,7 @@ button,
   }
 
   .footer .navigation__list {
-    width: 441px;
+    max-width: 450px;
   }
 
   .intro {
@@ -1489,7 +1502,7 @@ button,
     column-gap: 25px;
   }
 
-  .about__text h2 {
+  .about__content h2 {
     margin-bottom: 30px;
     font-size: 26px;
     line-height: 36.4px;
@@ -1691,7 +1704,7 @@ button,
   }
 
   .footer .navigation__list {
-    width: auto;
+    max-width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1734,11 +1747,11 @@ button,
     column-gap: 0;
   }
 
-  .about__text {
+  .about__content {
     margin-bottom: 50px;
   }
 
-  .about__text h2 {
+  .about__content h2 {
     font-size: 24px;
     line-height: 33.6px;
   }

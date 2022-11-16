@@ -1,5 +1,5 @@
 .products {
-  padding: 95px 0 120px;
+  padding: 86px 0 89px;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -12,7 +12,7 @@
 
 .products__container h2 {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 33px;
   padding: 0;
 
   font-weight: 600;
@@ -108,7 +108,7 @@
 
 .products__item-front h3 {
   margin: 0;
-  padding: 30px;
+  padding: 23px 30px;
 
   font-weight: 500;
   font-size: 18px;
@@ -131,7 +131,7 @@
 }
 
 .products__item-back {
-  padding: 35px 25px;
+  padding: 29px 25px;
   width: 100%;
 
   color: $color-default-light;
@@ -159,7 +159,7 @@
 
 .products__item-back dl {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   height: 68%;
   overflow: auto;
 
@@ -186,7 +186,7 @@
   color: #d8d8d9;
 
   &:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 }
 

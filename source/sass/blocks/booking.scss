@@ -3,7 +3,6 @@
   min-height: 555px;
 
   display: flex;
-  align-items: center;
 
   background-color: $color-default-dark;
   background-image: url("../img/form.jpg");
@@ -69,7 +68,7 @@
 
 .booking__info h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
 
   font-weight: 700;
   font-size: 40px;
