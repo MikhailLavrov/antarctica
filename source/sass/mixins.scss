@@ -6,7 +6,7 @@
 
 @mixin hover {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover {
       @content;
     }
   }

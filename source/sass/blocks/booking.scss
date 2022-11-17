@@ -40,7 +40,7 @@
 
   display: grid;
   grid-template-columns: auto 403px;
-  column-gap: $tablet-indent;
+  column-gap: $primary-indent;
 
   @include vp-1023 {
     display: block;
