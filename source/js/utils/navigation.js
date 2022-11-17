@@ -24,8 +24,6 @@ const closeNavigation = ({target}) => {
 
 const closeOnResize = () => {
   if (document.body.offsetWidth > '767') {
-    // eslint-disable-next-line no-console
-    console.log(document.body.offsetWidth);
     sectionElement.innerHTML = pageContent;
     headerLogoElement.classList.remove('visually-hidden');
     bodyElement.classList.remove('scroll-lock');

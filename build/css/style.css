@@ -962,8 +962,13 @@ button,
   background-color: #f9fbfd;
 }
 
-.advantages__item svg {
-  margin-bottom: 13px;
+.advantages__img {
+  margin-bottom: 19px;
+  height: 32px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
 }
 
 .advantages__item h3 {
@@ -1046,7 +1051,6 @@ button,
 }
 
 .products__item-front {
-  height: 100%;
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
@@ -1064,7 +1068,6 @@ button,
 }
 
 .products__item-front img {
-  position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1087,6 +1090,13 @@ button,
 .products__item-back {
   padding: 29px 25px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #f9fbfd;
   background-color: #011c40;
   -webkit-transform: perspective(1000px) rotateY(180deg);
@@ -1135,6 +1145,7 @@ button,
 
 .products__item-back a {
   padding: 9px 10px;
+  margin-top: auto;
   display: block;
   font-weight: 600;
   font-size: 14px;
@@ -1553,16 +1564,15 @@ button,
   }
 
   .advantages__item {
-    padding: 25px 17px 18px 20px;
+    padding: 25px 17px 24px 20px;
   }
 
   .advantages__item:last-child h3 {
     margin-bottom: 20px;
   }
 
-  .advantages__item svg {
-    width: auto;
-    height: 10%;
+  .advantages__img {
+    height: 26px;
   }
 
   .advantages__item h3 {
@@ -1834,23 +1844,8 @@ button,
     margin-bottom: 30px;
   }
 
-  .advantages__item:first-child svg {
-    width: 21px;
-    height: 26px;
-  }
-
-  .advantages__item:last-child svg {
-    width: 36px;
-    height: 26px;
-  }
-
   .advantages__item:last-child h3 {
     margin-bottom: 10px;
-  }
-
-  .advantages__item svg {
-    width: 27px;
-    height: 26px;
   }
 
   .advantages__item h3 {
@@ -1862,7 +1857,7 @@ button,
   }
 
   .products__container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     font-size: 24px;
     line-height: 36px;
   }

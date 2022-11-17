@@ -76,7 +76,7 @@
   background-color: $color-default-light;
 
   @include vp-1023 {
-    padding: 25px 17px 18px 20px;
+    padding: 25px 17px 24px 20px;
 
     &:last-child h3 {
       margin-bottom: 20px;
@@ -90,16 +90,6 @@
       margin-bottom: 30px;
     }
 
-    &:first-child svg {
-      width: 21px;
-      height: 26px;
-    }
-
-    &:last-child svg {
-      width: 36px;
-      height: 26px;
-    }
-
     &:last-child h3 {
       margin-bottom: 10px;
     }
@@ -110,16 +100,15 @@
   }
 }
 
-.advantages__item svg {
-  margin-bottom: 13px;
+.advantages__img {
+  margin-bottom: 19px;
+  height: 32px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
 
   @include vp-1023 {
-    width: auto;
-    height: 10%;
-  }
-
-  @include vp-767 {
-    width: 27px;
     height: 26px;
   }
 }
