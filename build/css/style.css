@@ -1349,9 +1349,7 @@ button,
 
 .contacts__info svg {
   margin-right: 10px;
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  transform: translateY(4px);
+  min-width: 18px;
 }
 
 .contacts__info h3 {
@@ -1367,6 +1365,12 @@ button,
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 24px;
+}
+
+.contacts__info p svg {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 .contacts__info a {

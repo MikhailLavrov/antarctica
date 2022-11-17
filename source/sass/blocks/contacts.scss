@@ -65,7 +65,7 @@
 
 .contacts__info svg {
   margin-right: 10px;
-  transform: translateY(4px);
+  min-width: 18px;
 
   @include vp-1023 {
     margin-right: 12px;
@@ -91,6 +91,10 @@
 
   font-size: 16px;
   line-height: 24px;
+
+  & svg {
+    transform: translateY(5px);
+  }
 
   @include vp-1023 {
     margin-bottom: 21px;
