@@ -118,4 +118,14 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
+
+  cursor: pointer;
+
+  @include hover-focus {
+    box-shadow: inset $base-shadow;
+  }
+
+  @include active {
+    box-shadow: inset $base-shadow;
+  }
 }
