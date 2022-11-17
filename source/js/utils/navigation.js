@@ -1,4 +1,5 @@
 let bodyElement = document.body;
+let pageWrapperElement = bodyElement.querySelector('.wrapper');
 let navButtonElement = bodyElement.querySelector('.navigation__button');
 let headerLogoElement = bodyElement.querySelector('.header__logo').querySelector('svg');
 let sectionElement = bodyElement.querySelector('section');
@@ -33,9 +34,10 @@ const closeOnResize = () => {
 
 // Mobile menu toggle
 const navMenuOpen = () => {
-  if (bodyElement.classList.contains('body--nojs')) {
-    bodyElement.classList.remove('body--nojs');
+  if (pageWrapperElement.classList.contains('wrapper--nojs')) {
+    pageWrapperElement.classList.remove('wrapper--nojs');
   }
+
   if (navButtonElement) {
     navButtonElement.addEventListener('click', function () {
       bodyElement.classList.toggle('menu-opened');
