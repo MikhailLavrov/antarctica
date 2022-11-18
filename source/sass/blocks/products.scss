@@ -59,7 +59,8 @@
   min-height: 386px;
   position: relative;
 
-  &:hover {
+  &:hover,
+  & :focus-within {
     .products__item-front {
       transform: perspective(1000px) rotateY(-180deg);
     }

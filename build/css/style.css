@@ -760,6 +760,10 @@ button,
   line-height: 20px;
   font-weight: 500;
   color: #f9fbfd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .navigation__item--header a {
@@ -1020,12 +1024,14 @@ button,
   position: relative;
 }
 
-.products__item:hover .products__item-front {
+.products__item:hover .products__item-front,
+.products__item :focus-within .products__item-front {
   -webkit-transform: perspective(1000px) rotateY(-180deg);
   transform: perspective(1000px) rotateY(-180deg);
 }
 
-.products__item:hover .products__item-back {
+.products__item:hover .products__item-back,
+.products__item :focus-within .products__item-back {
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
@@ -1328,6 +1334,10 @@ button,
   font-size: 14px;
   line-height: 21px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__button.focus-visible:focus {
@@ -2001,12 +2011,6 @@ button,
 }
 
 @media (hover: hover) {
-  .logo:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
   .navigation__item:hover:not(.focus-visible) a {
     text-shadow: 0 4px 4px rgba(255, 255, 255, 0.75);
   }
@@ -2014,6 +2018,12 @@ button,
   .socials__item a:hover:not(.focus-visible) svg {
     -webkit-filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.75));
     filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.75));
+  }
+
+  .footer .logo:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .advantages__item:hover {

@@ -41,6 +41,8 @@
   font-weight: 500;
   color: $color-default-light;
 
+  user-select: none;
+
   @include vp-1023 {
     padding: 4px;
   }
