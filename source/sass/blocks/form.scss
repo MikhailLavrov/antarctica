@@ -72,8 +72,16 @@
   line-height: 13px;
   color: $color-default-light;
 
+  cursor: pointer;
+
   @include vp-767 {
     margin-bottom: 26px;
+  }
+
+  @include hover-focus {
+    & .form__checkbox-mark {
+      box-shadow: inset $base-shadow;
+    }
   }
 }
 

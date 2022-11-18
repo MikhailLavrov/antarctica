@@ -1,6 +1,12 @@
 .logo {
   display: flex;
   align-items: center;
+
+  transition: 300ms;
+
+  @include hover {
+    transform: scale(1.1);
+  }
 }
 
 .logo svg {
