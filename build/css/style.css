@@ -1718,13 +1718,16 @@ button,
 
   .menu-opened .navigation__list--header {
     padding: 75px 30px 75px 15px;
-    width: 289px;
+    width: 285px;
     height: 100vh;
     display: block;
     position: fixed;
     right: 0;
     top: 0;
     overflow: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     background-color: #f9fbfd;
   }
 

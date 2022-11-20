@@ -107,7 +107,7 @@
 .menu-opened .navigation__list--header {
   @include vp-767 {
     padding: 75px 30px 75px 15px;
-    width: 289px;
+    width: 285px;
     height: 100vh;
 
     display: block;
@@ -116,6 +116,7 @@
     right: 0;
     top: 0;
     overflow: auto;
+    transform: none;
 
     background-color: $color-default-light;
   }
