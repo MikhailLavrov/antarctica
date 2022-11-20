@@ -59,11 +59,11 @@
     outline: none;
 
     &[aria-invalid="true"] {
-      box-shadow: 0px 0px 0px 2px #ffb8b8 inset;
+      box-shadow: 0 0 0 2px #ffb8b8 inset;
     }
 
     &[aria-invalid="false"] {
-      box-shadow: 0px 0px 0px 2px #b9ffb8 inset;
+      box-shadow: 0 0 0 2px #b9ffb8 inset;
     }
   }
 

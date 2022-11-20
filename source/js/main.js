@@ -3,6 +3,7 @@ import {navMenuOpen} from './utils/navigation';
 import {colorHeaderOnScroll} from './utils/header-scroll';
 import {mapInit as yMapInit} from './utils/map-init';
 import {initFormValidate} from './utils/init-form-validate';
+import {upwardButtonInit} from './utils/upward.js';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     colorHeaderOnScroll();
     yMapInit();
     initFormValidate();
+    upwardButtonInit();
   });
 });
 

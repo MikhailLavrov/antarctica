@@ -715,9 +715,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition: 100ms;
+  -o-transition: 100ms;
+  transition: 100ms;
 }
 
 .logo svg {
@@ -1262,13 +1262,13 @@ button,
 }
 
 .form__inputs input:focus[aria-invalid=true] {
-  -webkit-box-shadow: 0px 0px 0px 2px #ffb8b8 inset;
-  box-shadow: 0px 0px 0px 2px #ffb8b8 inset;
+  -webkit-box-shadow: 0 0 0 2px #ffb8b8 inset;
+  box-shadow: 0 0 0 2px #ffb8b8 inset;
 }
 
 .form__inputs input:focus[aria-invalid=false] {
-  -webkit-box-shadow: 0px 0px 0px 2px #b9ffb8 inset;
-  box-shadow: 0px 0px 0px 2px #b9ffb8 inset;
+  -webkit-box-shadow: 0 0 0 2px #b9ffb8 inset;
+  box-shadow: 0 0 0 2px #b9ffb8 inset;
 }
 
 .form__inputs input::-webkit-input-placeholder {
@@ -1439,6 +1439,31 @@ button,
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+}
+
+.upward {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: rgba(1, 28, 64, 0.5);
+  background-image: url("../img/svg/upward.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.upward.active {
+  visibility: visible;
+  opacity: 100;
 }
 
 /* @mixin hover-focus {
