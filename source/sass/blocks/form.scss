@@ -55,6 +55,18 @@
 
   border: none;
 
+  &:focus {
+    outline: none;
+
+    &[aria-invalid="true"] {
+      box-shadow: 0px 0px 0px 2px #ffb8b8 inset;
+    }
+
+    &[aria-invalid="false"] {
+      box-shadow: 0px 0px 0px 2px #b9ffb8 inset;
+    }
+  }
+
   &::placeholder {
     font-size: 14px;
     line-height: 21px;
@@ -78,7 +90,8 @@
     margin-bottom: 26px;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus-within {
     & .form__checkbox-mark {
       box-shadow: inset $base-shadow;
     }
