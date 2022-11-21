@@ -1461,7 +1461,7 @@ button,
   transition: 0.5s;
 }
 
-.upward.active {
+.upward--active {
   visibility: visible;
   opacity: 100;
 }

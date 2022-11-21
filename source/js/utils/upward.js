@@ -18,7 +18,7 @@ const upwardButtonInit = () => {
       const bodyHeight = body.offsetHeight;
       const heightBeforeFooter = bodyHeight - (viewportHeight + footerHeight);
 
-      scrollButton.classList.toggle('active', scrollProgress > 500 && scrollProgress <= heightBeforeFooter);
+      scrollButton.classList.toggle('upward--active', scrollProgress > 500 && scrollProgress <= heightBeforeFooter);
     });
 
     scrollButton.addEventListener('click', scrollToTop);
