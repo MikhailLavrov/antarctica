@@ -5,6 +5,6 @@ import webpackConfig from '../webpack.config.cjs';
 const compileScripts = () =>
   gulp.src(['source/js/main.js'])
       .pipe(webpackStream(webpackConfig))
-      .pipe(gulp.dest('build/js'));
+      .pipe(gulp.dest('docs/js'));
 
 export default compileScripts;
