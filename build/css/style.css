@@ -1771,6 +1771,26 @@ button,
     background-color: #f9fbfd;
   }
 
+  .menu-opened .navigation__list--header::before {
+    position: fixed;
+    content: "";
+    width: inherit;
+    height: 75px;
+    background-color: #f9fbfd;
+    top: 0;
+    right: 0;
+  }
+
+  .menu-opened .navigation__list--header::after {
+    position: fixed;
+    content: "";
+    width: inherit;
+    height: 75px;
+    background-color: #f9fbfd;
+    bottom: 0;
+    right: 0;
+  }
+
   .menu-opened .navigation__item:not(:last-child) {
     margin-bottom: 10px;
   }

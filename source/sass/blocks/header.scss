@@ -119,6 +119,26 @@
     transform: none;
 
     background-color: $color-default-light;
+
+    &::before {
+      position: fixed;
+      content: '';
+      width: inherit;
+      height: 75px;
+      background-color: $color-default-light;
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      position: fixed;
+      content: '';
+      width: inherit;
+      height: 75px;
+      background-color: $color-default-light;
+      bottom: 0;
+      right: 0;
+    }
   }
 }
 
