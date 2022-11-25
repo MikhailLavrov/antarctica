@@ -803,7 +803,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 26px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
@@ -1103,6 +1103,8 @@ button,
   flex-direction: column;
   color: #f9fbfd;
   background-color: #011c40;
+  -webkit-transform: perspective(1000px) rotateY(180deg);
+  transform: perspective(1000px) rotateY(180deg);
 }
 
 .products__item-back p {
@@ -1538,6 +1540,7 @@ button,
 
   .socials {
     width: 87px;
+    gap: 17px;
   }
 
   .footer {
