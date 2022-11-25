@@ -803,9 +803,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -962,9 +962,7 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  gap: 40px;
   list-style: none;
 }
 
@@ -1094,7 +1092,7 @@ button,
 }
 
 .products__item-back {
-  padding: 29px 25px;
+  padding: 30px 25px 35px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1105,8 +1103,6 @@ button,
   flex-direction: column;
   color: #f9fbfd;
   background-color: #011c40;
-  -webkit-transform: perspective(1000px) rotateY(180deg);
-  transform: perspective(1000px) rotateY(180deg);
 }
 
 .products__item-back p {
@@ -1661,7 +1657,7 @@ button,
   }
 
   .products__item-back {
-    padding: 30px 35px;
+    padding: 30px 35px 35px;
   }
 
   .booking {
@@ -1950,7 +1946,7 @@ button,
   }
 
   .products__item-back {
-    padding: 28px 25px;
+    padding: 30px 25px 35px;
   }
 
   .booking {

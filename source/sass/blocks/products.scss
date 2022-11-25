@@ -134,7 +134,7 @@
 }
 
 .products__item-back {
-  padding: 29px 25px;
+  padding: 30px 25px 35px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -142,14 +142,14 @@
   color: $color-default-light;
 
   background-color: $color-default-dark;
-  transform: perspective(1000px) rotateY(180deg);
+  // transform: perspective(1000px) rotateY(180deg);
 
   @include vp-1023 {
-    padding: 30px 35px;
+    padding: 30px 35px 35px;
   }
 
   @include vp-767 {
-    padding: 28px 25px;
+    padding: 30px 25px 35px;
   }
 }
 

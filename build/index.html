@@ -95,10 +95,10 @@
                 <div class="products__content">
                   <div class="products__item-front">
                     <h3>Круиз “Астория”</h3>
-                      <picture>
-                        <source type="image/webp" srcset="./img/products/cruise-astoria.webp 1x, ./img/products/cruise-astoria@2x.webp 2x">
-                        <img width="309" height="386" src="./img/products/cruise-astoria.jpg" srcset="./img/products/cruise-astoria@2x.jpg 2x" alt="Круиз Астория.">
-                      </picture>
+                    <picture>
+                      <source type="image/webp" srcset="./img/products/cruise-astoria.webp 1x, ./img/products/cruise-astoria@2x.webp 2x">
+                      <img width="309" height="386" src="./img/products/cruise-astoria.jpg" srcset="./img/products/cruise-astoria@2x.jpg 2x" alt="Круиз Астория.">
+                    </picture>
                   </div>
                   <div class="products__item-back">
                     <p>Круиз "Астория"</p>
@@ -330,15 +330,15 @@
                   <fieldset>
                     <legend>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
                     <div class="form__inputs">
-                      <div class="form__input-wrapper" data-validate-type="text" data-limitations="name">
+                      <div class="form__input-wrapper">
                         <label class="visually-hidden" for="name">Имя.</label>
-                        <input type="text" id="name" placeholder="Имя" name="name" minlength="2" maxlength="50" required>
+                        <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]\s*+$" minlength="2" maxlength="50" required>
                       </div>
-                      <div class="form__input-wrapper" data-validate-type="phone">
+                      <div class="form__input-wrapper">
                         <label class="visually-hidden" for="phone">Телефон.</label>
-                        <input type="tel" id="phone" placeholder="Телефон" name="phone" required>
+                        <input type="tel" id="phone" placeholder="Телефон" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" name="phone" required>
                       </div>
-                      <div class="form__input-wrapper" data-validate-type="email">
+                      <div class="form__input-wrapper">
                         <label class="visually-hidden" for="email">Email.</label>
                         <input type="email" id="email" placeholder="Email" name="email" required>
                       </div>
