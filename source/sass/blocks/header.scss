@@ -122,7 +122,7 @@
 
     &::before {
       position: fixed;
-      content: '';
+      content: "";
       width: inherit;
       height: 75px;
       background-color: $color-default-light;
@@ -132,7 +132,7 @@
 
     &::after {
       position: fixed;
-      content: '';
+      content: "";
       width: inherit;
       height: 75px;
       background-color: $color-default-light;
