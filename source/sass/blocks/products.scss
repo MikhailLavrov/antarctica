@@ -142,7 +142,7 @@
   color: $color-default-light;
 
   background-color: $color-default-dark;
-  // transform: perspective(1000px) rotateY(180deg);
+  transform: perspective(1000px) rotateY(180deg);
 
   @include vp-1023 {
     padding: 30px 35px 35px;
