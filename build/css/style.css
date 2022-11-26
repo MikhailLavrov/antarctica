@@ -1022,6 +1022,21 @@ button,
   position: relative;
 }
 
+.products__item--astoria img {
+  -o-object-position: 56%;
+  object-position: 56%;
+}
+
+.products__item--aurora img {
+  -o-object-position: 42%;
+  object-position: 42%;
+}
+
+.products__item--leonor img {
+  -o-object-position: 58%;
+  object-position: 58%;
+}
+
 .products__item:hover .products__item-front,
 .products__item :focus-within .products__item-front {
   -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -1653,6 +1668,16 @@ button,
     width: 96%;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__item--odyssey img {
+    -o-object-position: 36%;
+    object-position: 36%;
+  }
+
+  .products__item--aurora img {
+    -o-object-position: 50%;
+    object-position: 50%;
   }
 
   .products__item-front h3 {

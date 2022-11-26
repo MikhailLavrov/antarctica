@@ -59,6 +59,28 @@
   min-height: 386px;
   position: relative;
 
+  &--astoria img {
+    object-position: 56%;
+  }
+
+  &--odyssey img {
+    @include vp-1023 {
+      object-position: 36%;
+    }
+  }
+
+  &--aurora img {
+    object-position: 42%;
+
+    @include vp-1023 {
+      object-position: 50%;
+    }
+  }
+
+  &--leonor img {
+    object-position: 58%;
+  }
+
   &:hover,
   & :focus-within {
     .products__item-front {
