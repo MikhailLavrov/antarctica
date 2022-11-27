@@ -341,7 +341,7 @@
                     <div class="form__inputs">
                       <div class="form__input-wrapper">
                         <label class="visually-hidden" for="name">Имя.</label>
-                        <input type="text" id="name" placeholder="Имя" name="name" pattern="^[а-яА-ЯёЁa-zA-Z-.]\s*+$" minlength="2" maxlength="50" required>
+                        <input type="text" id="name" placeholder="Имя" name="name" pattern="^(?!\s*$)[-/', а-яА-Я, a-zA-Z]+$" minlength="2" maxlength="50" required>
                       </div>
                       <div class="form__input-wrapper">
                         <label class="visually-hidden" for="phone">Телефон.</label>
