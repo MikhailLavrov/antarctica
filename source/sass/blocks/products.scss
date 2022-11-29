@@ -45,7 +45,7 @@
   list-style: none;
 
   @include vp-1023 {
-    width: 96%;
+    width: 95%;
     grid-template-columns: repeat(2, 1fr);
   }
 
