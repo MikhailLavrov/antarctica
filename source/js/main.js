@@ -3,7 +3,6 @@ import {navMenuOpen} from './utils/navigation';
 import {colorHeaderOnScroll} from './utils/header-scroll';
 import {mapInit as yMapInit} from './utils/map-init';
 import {upwardButtonInit} from './utils/upward.js';
-import {initPhoneMask} from './utils/phone-mask';
 
 // ---------------------------------
 
@@ -12,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   iosVhFix();
   navMenuOpen();
-  initPhoneMask();
   // Modules
   // ---------------------------------
 
